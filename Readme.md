@@ -11,7 +11,9 @@
 
 ## API
 
+### nextTabbableElement( [root] )
 
+  Find the next element in the tab order after `root` (defaults to the `body`).
 
 ## License
 
