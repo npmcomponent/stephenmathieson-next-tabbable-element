@@ -64,4 +64,17 @@ describe('next-tabbable-element', function () {
     var yo = document.querySelector('#yo');
     assert(yo == next());
   });
+
+  it('should handle detached elements', function () {
+    var yo = document.querySelector('#yo');
+    var foo = document.createElement('div');
+    assert(yo == next(foo));
+  });
+
+  it('should support non-tabbable elements', function () {
+    var c = document.querySelector('#c');
+    var d = document.querySelector('#d');
+    var div = c.nextSibling;
+    assert(d == next(div));
+  });
 });
