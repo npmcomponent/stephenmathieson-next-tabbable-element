@@ -1,0 +1,14 @@
+{
+  "name": "next-tabbable-element",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "mocha": "~1.17",
+    "component": "~0.19",
+    "st": "~0.3",
+    "mocha-phantomjs": "~3.3"
+  }
+}

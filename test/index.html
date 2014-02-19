@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>next-tabbable-element</title>
+  <link rel="stylesheet" href="/node_modules/mocha/mocha.css">
+  <script src="/node_modules/mocha/mocha.js"></script>
+  <script src="/build/build.js"></script>
+  <script>
+    mocha.setup('bdd');
+    cov = ~location.search.indexOf('cov')
+      ? require('coverage')('next-tabbable-element')
+      : null;
+
+    if (cov) {
+      // we only need styles if we're displaying coverage reports
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = '/build/build.css';
+      document.head.appendChild(link);
+    }
+  </script>
+</head>
+<body>
+  <div id="coverage"></div>
+  <div id="mocha"></div>
+  <script src="/test/next-tabbable-element.js"></script>
+  <script>
+    if (cov) {
+      mocha.run(cov.render.bind(cov));
+    } else {
+      window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
+    }
+  </script>
+</body>
+</html>

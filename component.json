@@ -1,0 +1,19 @@
+{
+  "name": "next-tabbable-element",
+  "repo": "stephenmathieson/next-tabbable-element",
+  "description": "Get the next element in the tab order",
+  "version": "0.0.1",
+  "dependencies": {
+    "stephenmathieson/is-focusable": "0.0.1",
+    "stephenmathieson/descendants": "0.1.0"
+  },
+  "development": {
+    "yields/coverage": "*",
+    "component/assert": "*"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
