@@ -1,6 +1,7 @@
 
 var isFocousable = require('is-focusable');
 var descendants = require('descendants');
+var indexof = require('indexof');
 
 module.exports = nextTabbableElement;
 
@@ -16,7 +17,7 @@ module.exports = nextTabbableElement;
 function nextTabbableElement(root) {
   var elements = descendants(document.body);
   var i = root
-    ? elements.indexOf(root) + 1
+    ? indexof(elements, root) + 1
     : 0;
 
   for (var len = elements.length; i < len; i++) {
