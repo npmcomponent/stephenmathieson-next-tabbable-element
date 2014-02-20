@@ -3,6 +3,8 @@
 
   Get the next element in the tab order
 
+[![Build Status](https://travis-ci.org/stephenmathieson/next-tabbable-element.png)](https://travis-ci.org/stephenmathieson/next-tabbable-element)
+
 ## Installation
 
   Install with [component(1)](http://component.io):
