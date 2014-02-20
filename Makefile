@@ -26,6 +26,7 @@ test: build server.pid
 server.pid: node_modules
 	$(BINS)/st \
 		--port $(TEST_PORT) \
+		--no-cache \
 		& echo $$! > ./$@
 
 kill-server:
