@@ -1,7 +1,7 @@
 
-var isFocousable = require('is-focusable');
-var descendants = require('descendants');
-var indexof = require('indexof');
+var isFocousable = require('stephenmathieson-is-focusable');
+var descendants = require('stephenmathieson-descendants');
+var indexof = require('component-indexof');
 
 module.exports = nextTabbableElement;
 

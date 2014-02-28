@@ -1,14 +1,12 @@
 {
-  "name": "next-tabbable-element",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "test": "make test"
-  },
+  "name": "stephenmathieson-next-tabbable-element",
+  "description": "Get the next element in the tab order",
+  "version": "1.0.1",
+  "main": "index.js",
   "dependencies": {
-    "mocha": "~1.17",
-    "component": "~0.19",
-    "st": "~0.3",
-    "mocha-phantomjs": "~3.3"
-  }
+    "stephenmathieson-is-focusable": "git://github.com/npmcomponent/stephenmathieson-is-focusable.git",
+    "stephenmathieson-descendants": "git://github.com/npmcomponent/stephenmathieson-descendants.git",
+    "component-indexof": "git://github.com/npmcomponent/component-indexof.git"
+  },
+  "license": "MIT"
 }
